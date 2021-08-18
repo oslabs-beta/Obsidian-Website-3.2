@@ -1,2 +1,5 @@
-# Obsidian-Website-3.2
-Obsidian website for 3.2
+# ObsidianWebsite
+
+<img alt="Travis (.org)" src="https://img.shields.io/travis/lascaux-obsidian/obsidian-website">
+
+deno run --allow-net --allow-read --unstable server.tsx -c tsconfig.json
