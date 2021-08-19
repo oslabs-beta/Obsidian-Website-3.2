@@ -3,9 +3,9 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build -t lascaux-obsidian/obsidian-website .
+  - docker build -t obsidiandocker/obsidian-website .
 script:
-  - docker run lascaux-obsidian/obsidian-website test
+  - docker run obsidiandocker/obsidian-website test
 deploy:
   provider: elasticbeanstalk
   region: 'us-east-1'
