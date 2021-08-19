@@ -5,7 +5,8 @@ const users = [
   {
     firstName: 'Michael',
     lastName: 'Melville',
-    image: '',
+    image:
+      'https://res.cloudinary.com/obsidian44/image/upload/v1629338933/obsidian44/IMG_6933_nzsbug.jpg',
     info: ' ',
     linkedin: 'https://www.linkedin.com/in//',
     github: 'https://github.com/meekle',
@@ -32,8 +33,8 @@ const users = [
     lastName: 'Yeghiazarian',
     image:
       'https://res.cloudinary.com/obsidian44/image/upload/v1629327185/obsidian44/olivia_su5ymm.jpg',
-    info: ' ',
-    linkedin: 'https://www.linkedin.com/in//',
+    info: 'Olivia is a full-stack software engineer  passionate about building scalable and responsive applications. The times when she is not in front of the computer you can find her doing a yoga class, which has been a lifetime hobby.',
+    linkedin: 'https://www.linkedin.com/in/olivia-y-software/',
     github: 'https://github.com/Olivia-code',
   },
 
