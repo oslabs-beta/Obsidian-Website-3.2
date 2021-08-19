@@ -8,7 +8,7 @@ const users = [
     image:
       'https://res.cloudinary.com/obsidian44/image/upload/v1629338933/obsidian44/IMG_6933_nzsbug.jpg',
     info: ' ',
-    linkedin: 'https://www.linkedin.com/in//',
+    linkedin: 'https://www.linkedin.com/in/michael-j-melville/',
     github: 'https://github.com/meekle',
   },
   {
@@ -23,9 +23,10 @@ const users = [
   {
     firstName: 'Christopher',
     lastName: 'Berry',
-    image: '',
+    image:
+      'https://res.cloudinary.com/obsidian44/image/upload/v1629340890/obsidian44/20191006-DSC07716-2_1_izg7b5.jpg',
     info: ' ',
-    linkedin: 'https://www.linkedin.com/in//',
+    linkedin: 'https://www.linkedin.com/in/christopher-j-berry/',
     github: 'https://github.com/cjamesb',
   },
   {
@@ -34,7 +35,7 @@ const users = [
     image:
       'https://res.cloudinary.com/obsidian44/image/upload/v1629327185/obsidian44/olivia_su5ymm.jpg',
     info: 'Olivia is a full-stack software engineer  passionate about building scalable and responsive applications. The times when she is not in front of the computer you can find her doing a yoga class, which has been a lifetime hobby.',
-    linkedin: 'https://www.linkedin.com/in/olivia-y-software/',
+    linkedin: 'https://www.linkedin.com/in/olivia-yegazarian/',
     github: 'https://github.com/Olivia-code',
   },
 
