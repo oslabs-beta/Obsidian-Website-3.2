@@ -5,9 +5,10 @@ const users = [
   {
     firstName: 'Michael',
     lastName: 'Melville',
-    image: '',
-    info: ' ',
-    linkedin: 'https://www.linkedin.com/in//',
+    image:
+      'https://res.cloudinary.com/obsidian44/image/upload/v1629338933/obsidian44/IMG_6933_nzsbug.jpg',
+    info: 'Michael is an engineer with a lifelong passion for creative problem-solving.  When not working behind a keyboard, he can often be found playing at the cutting board or jumping off diving boards around the world.',
+    linkedin: 'https://www.linkedin.com/in/michael-j-melville/',
     github: 'https://github.com/meekle',
   },
   {
@@ -22,9 +23,10 @@ const users = [
   {
     firstName: 'Christopher',
     lastName: 'Berry',
-    image: '',
-    info: ' ',
-    linkedin: 'https://www.linkedin.com/in//',
+    image:
+      'https://res.cloudinary.com/obsidian44/image/upload/v1629340890/obsidian44/20191006-DSC07716-2_1_izg7b5.jpg',
+    info: 'Chris is a full-stack software engineer passionate about developing realistic solutions and optimization for complex problems. He loves sports, travel and exploring the great outdoors.',
+    linkedin: 'https://www.linkedin.com/in/christopher-j-berry/',
     github: 'https://github.com/cjamesb',
   },
   {
@@ -32,8 +34,8 @@ const users = [
     lastName: 'Yeghiazarian',
     image:
       'https://res.cloudinary.com/obsidian44/image/upload/v1629327185/obsidian44/olivia_su5ymm.jpg',
-    info: ' ',
-    linkedin: 'https://www.linkedin.com/in//',
+    info: 'Olivia is a full-stack software engineer  passionate about building scalable and responsive applications. The times when she is not in front of the computer you can find her doing a yoga class, which has been a lifetime hobby.',
+    linkedin: 'https://www.linkedin.com/in/olivia-yegazarian/',
     github: 'https://github.com/Olivia-code',
   },
 
