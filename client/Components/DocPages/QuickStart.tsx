@@ -24,13 +24,26 @@ const QuickStart = (props: any) => {
       <h2>Docker File for Full Demo</h2>
       <p>
         {" "}
-        If you would like to see Obsidian in action you can run the Docker Image
-        of our Demo server
+        If you would like to see Obsidian in action you can run Docker-Compose
+        to spin our demo server
       </p>
-      <h2>Demo Git Repository</h2>
       <p>
-        There is also a small demo server availible on git hub if you want to
-        see how Obsidian is implemented in a functioning server
+        <a href='https://github.com/oslabs-beta/obsidian-demo-docker'>
+          https://github.com/oslabs-beta/obsidian-demo-docker
+        </a>
+      </p>
+
+      <h2>Demo Git Repository</h2>
+
+      <p>
+        If you would like to explore the git repository of the Obsidian Demo the
+        link is provided below
+      </p>
+      <p>
+        {" "}
+        <a href='https://github.com/oslabs-beta/obsidian-demo-3.2'>
+          https://github.com/oslabs-beta/obsidian-demo-3.2
+        </a>
       </p>
 
       <h2>Adding Obsidian Cacheing tool to a GraphQL server</h2>
@@ -85,14 +98,41 @@ await app.listen({ port: PORT });
           `}
       </CodeBlock>
       <br />
-
+      <p>
+        Obsidian uses redis as a Cache Aside cacheing strategy so before running
+        the server script make sure you have redis-server listening at the port
+        given in the Router options above{" "}
+      </p>
       <p>
         After passing your resolvers and types (schema) to the Obsidian Router
-        With the usePlayground set to true you can confirm that the router is
-        working by going to localhost:3000/graphql and the server will serve the
-        graphQL playground.
+        the server will boot up and server /graphql route. With the
+        usePlayground set to true you can confirm that the router is working by
+        going to localhost:3000/graphql and the server will serve the graphQL
+        playground. Now that the Osidian Router is implemented the Server Cache
+        will cache queries and responses increasing response time and removing
+        load from the database servers.
       </p>
+      <p>
+        If you don't have the resolvers or types imports available but still
+        want to test that Obsidian Router servering the /graphql enpoint you can
+        declare the following dummy types and resolver varibales above the
+        GraphQLRouter. The graphql playgound will render at
+        localhost:3000/graphql, although the resolver wont actually do anything.
+      </p>
+      <CodeBlock language='typescript' showLineNumbers={true} style={dracula}>
+        {`const types = (gql as any) \`
+  type Movie {
+    id: ID
+    title: String
+    releaseYear: Int
+  }
 
+  type Query {
+    getMovie: Movie
+  }\`
+const resolvers = {};`}
+      </CodeBlock>
+      <br />
       <h2>Installation</h2>
       <p>In the server:</p>
       <CodeBlock language='typescript' showLineNumbers={true} style={dracula}>

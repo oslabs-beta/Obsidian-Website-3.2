@@ -59,14 +59,25 @@ const Overview = (props: any) => {
         to store cached data.
       </p>
       <h2>The Documentation</h2>
-      <p>We've split our documentation into four distinct sections.</p>
+      <p>We've split our documentation into distinct sections.</p>
       <ul>
         <li>
-          <strong>Basics</strong> guides us through a simple implementation of
-          full stack <code className='obsidianInline'>obsidian</code>, detailing
-          the setup of ObsidianRouter, ObsidianWrapper, usage patterns in React,
-          and how to harness server-side rendering to improve your client
-          caching strategy.
+          <strong>Quick Start</strong> Provies some example repositorys and a
+          docker-compose file if you want to spin up a server with Obsidian
+          implemented in and start exploring. There is also a quick guide to
+          adding Obsidans caching functionality to an exsisting graphql server.
+        </li>
+        <li>
+          <strong>Obsidian Router</strong> Provides information about setting up
+          the Obsidian Router
+        </li>
+        <li>
+          <strong>Obsidian Wrapper</strong> guides us through a simple
+          implementation of full stack{" "}
+          <code className='obsidianInline'>obsidian</code>, detailing the setup
+          of ObsidianRouter, ObsidianWrapper, usage patterns in React, and how
+          to harness server-side rendering to improve your client caching
+          strategy.
         </li>
         <li>
           <strong>Philosophy</strong> provides a high-level overview of caching
@@ -79,11 +90,6 @@ const Overview = (props: any) => {
           <code className='obsidianInline'>obsidian</code> offers and draws upon
           our Philosophy to illustrate their implementations in ObsidianRouter
           and ObsidianWrapper.
-        </li>
-        <li>
-          <strong>Advanced</strong> contains guides for more specialized options
-          and use-cases that we won't need while first exploring{" "}
-          <code className='obsidianInline'>obsidian</code>.
         </li>
       </ul>
       <p>

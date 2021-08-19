@@ -7,6 +7,15 @@ const ServerSideRendering = (props: any) => {
     <div className='docContainer'>
       <h1>Server-Side Rendering</h1>
       <p>
+        The Obsidian Wrapper is designed to provide client side caching of
+        responses in conjunction with server side rendering. Server side caching
+        is not required to be set to true, but the Obsidan Router must be
+        implemented for the browser cache to function.
+      </p>
+      <p>
+        Please make sure you have setup the Obsidian Router before continuing.
+      </p>
+      <p>
         In this chapter, we'll learn how to implement ObsidianWrapper,{" "}
         <code className='obsidianInline'>obsidian</code>'s GraphQL client, in a
         React app built with server-side rendering.
