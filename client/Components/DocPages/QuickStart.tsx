@@ -43,7 +43,7 @@ const QuickStart = (props: any) => {
         {`import { Application, Router } from "https://deno.land/x/oak@v6.0.1/mod.ts";
 import { ObsidianRouter, gql } from "https://deno.land/x/obsidian/mod.ts";
 
-const PORT = 3000; 
+const PORT = 8000; 
 const app = new Application();
 
 interface ObsRouter extends Router {
