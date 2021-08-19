@@ -37,7 +37,11 @@ const QuickStart = (props: any) => {
       <p>
         Obsidian Acts as an extrention to the Oak Router, so implementing
         Obsidian is as easy as importing the Obsidian Router, and Oak Router and
-        extending the oak Router with Obsidian.
+        extending the Oak Router with Obsidian.
+      </p>
+      <p>
+        The Code below will extend the Oak router and will server the /graphql
+        endpoint for any querys.
       </p>
       <CodeBlock language='typescript' showLineNumbers={true} style={dracula}>
         {`import { Application, Router } from "https://deno.land/x/oak@v6.0.1/mod.ts";
@@ -71,16 +75,6 @@ customIdentifier: ["id", "__typename"]
 // now we attach the graphql router routes to our app
 app.use(GraphQLRouter.routes(), GraphQLRouter.allowedMethods());
           
-// Create Route
-const router = new Router();
-
-//Serve index.html
-router.get('/', './index.htlm') 
-app.use(router.routes());
-
-//Attach routes
-app.use(router.routes());
-app.use(router.allowedMethods());
 
 app.addEventListener("listen", () => {
   console.log(\`listening on localhost:\${PORT}\`);
@@ -91,6 +85,13 @@ await app.listen({ port: PORT });
           `}
       </CodeBlock>
       <br />
+
+      <p>
+        After passing your resolvers and types (schema) to the Obsidian Router
+        With the usePlayground set to true you can confirm that the router is
+        working by going to localhost:3000/graphql and the server will serve the
+        graphQL playground.
+      </p>
 
       <h2>Installation</h2>
       <p>In the server:</p>
