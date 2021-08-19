@@ -37,10 +37,10 @@ const DocsContext = (props: any) => {
             setDocsPage("GettingStarted");
           }}
         >
-          ObsidianRouter
+          Obsidian Router
         </button>
         <div className='list-group-item'>
-          <h6>ObsidianWrapper</h6>
+          <h6>Obsidian Wrapper</h6>
           <div className='list-group'>
             <button
               className={`list-group-item list-group-item-action ${
