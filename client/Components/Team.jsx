@@ -7,7 +7,7 @@ const users = [
     lastName: 'Melville',
     image:
       'https://res.cloudinary.com/obsidian44/image/upload/v1629338933/obsidian44/IMG_6933_nzsbug.jpg',
-    info: ' ',
+    info: 'Michael is an engineer with a lifelong passion for seeking creative problems for everyday solutions.  Strike that. Reverse it. ',
     linkedin: 'https://www.linkedin.com/in/michael-j-melville/',
     github: 'https://github.com/meekle',
   },
