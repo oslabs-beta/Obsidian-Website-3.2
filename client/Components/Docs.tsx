@@ -1,7 +1,7 @@
 import { React } from '../../deps.ts';
 
 import Overview from './DocPages/Overview.tsx';
-import Polling from './DocPages/Advanced/Polling.tsx';
+import Polling from './DocPages/ObsidianWrapper/Polling.tsx';
 
 import BasicsErrors from './DocPages/Basics/Errors.tsx';
 import GettingStarted from './DocPages/Basics/GettingStarted.tsx';

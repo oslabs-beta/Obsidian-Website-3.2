@@ -27,18 +27,8 @@ const DocsContext = (props: any) => {
           Overview
         </button>
         <div className="list-group-item">
-          <h6>Basics</h6>
+          <h6>ObsidianWrapper</h6>
           <div className="list-group">
-            <button
-              className={`list-group-item list-group-item-action ${
-                props.docsPage === 'GettingStarted' ? 'active' : ''
-              }`}
-              onClick={() => {
-                setDocsPage('GettingStarted');
-              }}
-            >
-              Getting Started
-            </button>
             <button
               className={`list-group-item list-group-item-action ${
                 props.docsPage === 'ServerSideRendering' ? 'active' : ''
@@ -79,8 +69,28 @@ const DocsContext = (props: any) => {
             >
               Errors
             </button>
+            <button
+              className={`list-group-item list-group-item-action ${
+                props.docsPage === 'Polling' ? 'active' : ''
+              }`}
+              onClick={() => {
+                setDocsPage('Polling');
+              }}
+            >
+              Polling
+            </button>
           </div>
         </div>
+            <button
+              className={`list-group-item list-group-item-action ${
+                props.docsPage === 'GettingStarted' ? 'active' : ''
+              }`}
+              onClick={() => {
+                setDocsPage('GettingStarted');
+              }}
+            >
+              ObsidianRouter
+            </button>
         <button
           className={`list-group-item list-group-item-action ${
             props.docsPage === 'Philosophy' ? 'active' : ''
@@ -130,21 +140,6 @@ const DocsContext = (props: any) => {
                 setDocsPage('CachingErrors');
               }}
             >Errors</button>*/}
-          </div>
-        </div>
-        <div className="list-group-item">
-          <h6>Advanced</h6>
-          <div className="list-group">
-            <button
-              className={`list-group-item list-group-item-action ${
-                props.docsPage === 'Polling' ? 'active' : ''
-              }`}
-              onClick={() => {
-                setDocsPage('Polling');
-              }}
-            >
-              Polling
-            </button>
           </div>
         </div>
       </div>
