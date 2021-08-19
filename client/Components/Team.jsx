@@ -25,7 +25,7 @@ const users = [
     lastName: 'Berry',
     image:
       'https://res.cloudinary.com/obsidian44/image/upload/v1629340890/obsidian44/20191006-DSC07716-2_1_izg7b5.jpg',
-    info: ' ',
+    info: 'Chris is a full-stack software engineer passionate about developing realistic solutions and optimization for complex problems. He loves sports, travel and exploring the great outdoors.',
     linkedin: 'https://www.linkedin.com/in/christopher-j-berry/',
     github: 'https://github.com/cjamesb',
   },
