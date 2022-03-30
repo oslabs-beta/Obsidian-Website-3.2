@@ -1,7 +1,53 @@
 import { React } from '../../deps.ts';
+import {FaStar} from 'https://esm.sh/react-icons/fa';
 import TeamMember from './TeamMember.jsx';
 
 const users = [
+	{
+    firstName: 'Ali',
+    lastName: 'Fay',
+    image:
+      'https://res.cloudinary.com/dnlhcpafu/image/upload/v1648677370/Ali_dzbmj4.png',
+    info: 'Ali is a full-stack software engineer.',
+    linkedin: 'https://www.linkedin.com/in//',
+    github: 'https://github.com/ali-fay',
+  },
+	{
+    firstName: 'Linda',
+    lastName: 'Zhao',
+    image:
+      'https://res.cloudinary.com/dnlhcpafu/image/upload/v1648666755/lindaZ_iaz71p.jpg',
+    info: 'Linda is a full-stack software engineer.',
+    linkedin: 'https://www.linkedin.com/in//',
+    github: 'https://github.com/lzhao15',
+  },
+	{
+    firstName: 'Yasir',
+    lastName: 'Choudhury',
+    image:
+      'https://res.cloudinary.com/dnlhcpafu/image/upload/v1648666755/yasirC_xvia9y.png',
+    info: 'Yasir is a full-stack software engineer.',
+    linkedin: 'https://www.linkedin.com/in//',
+    github: 'https://github.com/Yasir-Choudhury',
+  },
+	{
+    firstName: 'Yurii',
+    lastName: 'Shchyrba',
+    image:
+      'https://res.cloudinary.com/dnlhcpafu/image/upload/v1648669384/yuriiS_txl37b.jpg',
+    info: 'Yurii is a full-stack software engineer.',
+    linkedin: 'https://www.linkedin.com/in//',
+    github: 'https://github.com/YuriiShchyrba',
+  },
+	{
+    firstName: 'Anthony',
+    lastName: 'Guan',
+    image:
+      'https://res.cloudinary.com/dnlhcpafu/image/upload/v1648666702/IMG_4039_gkbwez.jpg',
+    info: 'Anthony is a curious builder that likes to move fast and break things. And then put them back together. When not coding, he\'s probably watching informational YouTube videos or testing out a new recipe in the kitchen.',
+    linkedin: 'https://www.linkedin.com/in/guananthony/',
+    github: 'https://github.com/guananthony',
+  },
   {
     firstName: 'Michael',
     lastName: 'Melville',

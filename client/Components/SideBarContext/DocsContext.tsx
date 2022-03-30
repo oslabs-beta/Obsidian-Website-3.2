@@ -1,6 +1,7 @@
 /** @format */
 
 import { React } from "../../../deps.ts";
+import {FaStar} from 'https://esm.sh/react-icons/fa';
 
 const DocsContext = (props: any) => {
   const { setDocsPage } = props;
@@ -74,6 +75,16 @@ const DocsContext = (props: any) => {
             </button>
             <button
               className={`list-group-item list-group-item-action ${
+                props.docsPage === "WriteThrough" ? "active" : ""
+              }`}
+              onClick={() => {
+                setDocsPage("WriteThrough");
+              }}
+            >
+              Write-Through Caching <FaStar color='white'/>
+            </button>
+            <button
+              className={`list-group-item list-group-item-action ${
                 props.docsPage === "BasicsErrors" ? "active" : ""
               }`}
               onClick={() => {
@@ -94,6 +105,16 @@ const DocsContext = (props: any) => {
             </button>
           </div>
         </div>
+				<button
+          className={`list-group-item list-group-item-action ${
+            props.docsPage === "ObsidianDeveloperTool" ? "active" : ""
+          }`}
+          onClick={() => {
+            setDocsPage("ObsidianDeveloperTool");
+          }}
+        >
+          Obsidian Developer Tool <FaStar color='white'/>
+        </button>
         <button
           className={`list-group-item list-group-item-action ${
             props.docsPage === "Philosophy" ? "active" : ""

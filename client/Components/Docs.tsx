@@ -10,6 +10,7 @@ import GettingStarted from "./DocPages/Basics/GettingStarted.tsx";
 
 import Mutations from "./DocPages/Basics/Mutations.tsx";
 import Queries from "./DocPages/Basics/Queries.tsx";
+import WriteThrough from "./DocPages/ObsidianWrapper/WriteThrough.tsx";
 import ServerSideRendering from "./DocPages/Basics/ServerSideRendering.tsx";
 
 import Client from "./DocPages/Caching/Client.tsx";
@@ -20,6 +21,7 @@ import Server from "./DocPages/Caching/Server.tsx";
 import Strategies from "./DocPages/Caching/Strategies.tsx";
 import Philosophy from "./DocPages/Philosophy.tsx";
 import QuickStart from "./DocPages/QuickStart.tsx";
+import ObsidianDeveloperTool from "./DocPages/ObsidianDeveloperTool.tsx";
 
 import SideBar from "./SideBar.tsx";
 
@@ -38,6 +40,7 @@ const Docs = (props: any) => {
   if (docsPage === "QuickStart") curDocsPage = <QuickStart />;
   if (docsPage === "Overview") curDocsPage = <Overview />;
   if (docsPage === "Philosophy") curDocsPage = <Philosophy />;
+  if (docsPage === "ObsidianDeveloperTool") curDocsPage = <ObsidianDeveloperTool />;
 
   if (docsPage === "Polling") curDocsPage = <Polling />;
 
@@ -49,6 +52,7 @@ const Docs = (props: any) => {
     curDocsPage = <Mutations setDocsPage={setDocsPage} />;
   if (docsPage === "Queries")
     curDocsPage = <Queries setDocsPage={setDocsPage} />;
+  if (docsPage === "WriteThrough") curDocsPage = <WriteThrough />;
   if (docsPage === "ServerSideRendering") curDocsPage = <ServerSideRendering />;
 
   if (docsPage === "Client") curDocsPage = <Client setDocsPage={setDocsPage} />;

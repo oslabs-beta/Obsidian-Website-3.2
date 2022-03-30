@@ -6,6 +6,7 @@ const QuickStart = (props: any) => {
   return (
     <div className='docContainer'>
       <h1>Quick Start</h1>
+			<p><i>Current version: 5.0 (March 2022)</i></p>
       <p>
         <code className='obsidianInline'>obsidian</code> is Deno's first native
         GraphQL caching client and server module. Boasting lightning-fast

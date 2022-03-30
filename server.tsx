@@ -80,9 +80,6 @@ if (import.meta.main) {
 
 export { app };
 
-
-
-
 function handlePage(ctx: any) {
   try {
     const body = (ReactDomServer as any).renderToString(<App />);
