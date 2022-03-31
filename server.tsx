@@ -75,11 +75,13 @@ app.addEventListener('listen', () => {
   console.log(`Listening at http://localhost:${PORT}`);
 });
 
-serve(handlePage);
+app.listen({port: PORT})
 
-if (import.meta.main) {
-  await app.listen({ port: PORT });
-}
+// serve(handlePage);
+
+// if (import.meta.main) {
+//   await app.listen({ port: PORT });
+// }
 
 export { app };
 
