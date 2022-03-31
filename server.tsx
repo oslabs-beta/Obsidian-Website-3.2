@@ -1,7 +1,7 @@
 import { Application, Router } from "https://deno.land/x/oak/mod.ts";
 import { React, ReactDomServer } from "./deps.ts";
 import App from "./client/app.tsx";
-import { staticFileMiddleware } from "./staticFileMiddleware.ts";
+// import { staticFileMiddleware } from "./staticFileMiddleware.ts";
 // import { h, renderSSR } from "https://deno.land/x/nano_jsx@v0.0.20/mod.ts";
 
 const app = new Application();
@@ -57,7 +57,7 @@ serverrouter.get('/static/client.js', (context) => {
   context.response.body = files['deno:///bundle.js'];
 });
 
-app.use(staticFileMiddleware);
+// app.use(staticFileMiddleware);
 app.use(router.routes());
 app.use(serverrouter.routes());
 app.use(router.allowedMethods());
