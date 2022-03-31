@@ -2,16 +2,17 @@ import { Application, Router } from 'https://deno.land/x/oak@v8.0.0/mod.ts';
 import { React, ReactDomServer } from './deps.ts';
 import App from './client/app.tsx';
 import { staticFileMiddleware } from './staticFileMiddleware.ts';
+// import { h, renderSSR } from "https://deno.land/x/nano_jsx@v0.0.20/mod.ts";
 
 const app = new Application();
 
-app.use(async (ctx: any, next: any) => {
+app.use(async (ctx, next) => {
   await next();
   const rt = ctx.response.headers.get('X-Response-Time');
   console.log(`${ctx.request.method} ${ctx.request.url} - ${rt}`);
 });
 
-app.use(async (ctx: any, next: any) => {
+app.use(async (ctx, next) => {
   const start = Date.now();
   await next();
   const ms = Date.now() - start;
@@ -65,7 +66,7 @@ await app.listen({ hostname: "localhost", port: 8080 });
 
 export { app };
 
-function handlePage(ctx: any) {
+function handlePage(ctx) {
   try {
     const body = (ReactDomServer as any).renderToString(<App />);
     ctx.response.body = `<!DOCTYPE html>
