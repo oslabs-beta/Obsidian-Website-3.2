@@ -1,18 +1,18 @@
-import { Application, Router } from 'https://deno.land/x/oak/mod.ts';
-import { React, ReactDomServer } from './deps.ts';
-import App from './client/app.tsx';
-import { staticFileMiddleware } from './staticFileMiddleware.ts';
+import { Application, Router } from "https://deno.land/x/oak/mod.ts";
+import { React, ReactDomServer } from "./deps.ts";
+import App from "./client/app.tsx";
+import { staticFileMiddleware } from "./staticFileMiddleware.ts";
 // import { h, renderSSR } from "https://deno.land/x/nano_jsx@v0.0.20/mod.ts";
 
 const app = new Application();
 
-app.use(async (ctx, next) => {
+app.use(async function(ctx, next) {
   await next();
   const rt = ctx.response.headers.get('X-Response-Time');
   console.log(`${ctx.request.method} ${ctx.request.url} - ${rt}`);
 });
 
-app.use(async (ctx, next) => {
+app.use(async function(ctx, next) {
   const start = Date.now();
   await next();
   const ms = Date.now() - start;
