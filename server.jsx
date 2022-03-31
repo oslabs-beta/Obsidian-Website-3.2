@@ -4,7 +4,7 @@ import App from './client/app.tsx';
 import { staticFileMiddleware } from './staticFileMiddleware.ts';
 // import { h, renderSSR } from "https://deno.land/x/nano_jsx@v0.0.20/mod.ts";
 
-const app = new Application();
+var app = new Application();
 
 app.use(async (ctx, next) => {
   await next();
