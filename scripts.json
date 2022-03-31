@@ -2,7 +2,7 @@
   "$schema": "https://deno.land/x/denon@2.5.0/schema.json",
   "scripts": {
     "start": {
-      "cmd": "deno run --allow-net --allow-read --unstable --reload server.tsx -c tsconfig.json",
+      "cmd": "deno run --allow-net --allow-read --unstable --reload new-server.tsx -c tsconfig.json",
       "desc": "run my server.tsx file"
     }
   }

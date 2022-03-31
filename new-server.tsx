@@ -66,9 +66,9 @@ await app.listen({ hostname: "localhost", port: 8080 });
 
 export { app };
 
-function handlePage(ctx) {
+function handlePage(ctx: any) {
   try {
-    const body = (ReactDomServer).renderToString(<App />);
+    const body = (ReactDomServer as any).renderToString(<App />);
     ctx.response.body = `<!DOCTYPE html />
   <html lang="en">
   <head>
