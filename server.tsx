@@ -77,7 +77,7 @@ app.addEventListener('listen', () => {
 
 app.listen({port: PORT})
 
-// serve(handlePage);
+serve(handlePage);
 
 // if (import.meta.main) {
 //   await app.listen({ port: PORT });
