@@ -5,13 +5,13 @@ import { staticFileMiddleware } from './staticFileMiddleware.ts';
 
 const app = new Application();
 
-app.use(async (ctx, next) => {
+app.use(async (ctx: any, next: any) => {
   await next();
   const rt = ctx.response.headers.get('X-Response-Time');
   console.log(`${ctx.request.method} ${ctx.request.url} - ${rt}`);
 });
 
-app.use(async (ctx, next) => {
+app.use(async (tx: any, next: any) => {
   const start = Date.now();
   await next();
   const ms = Date.now() - start;
