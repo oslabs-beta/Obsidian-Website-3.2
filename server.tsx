@@ -2,6 +2,7 @@ import { Application, Router } from './serverDeps.ts';
 import { React, ReactDomServer } from './deps.ts';
 import App from './client/app.tsx';
 import { staticFileMiddleware } from './staticFileMiddleware.ts';
+import { serve } from "https://deno.land/std@0.120.0/http/server.ts";
 
 const PORT = 3000;
 
@@ -73,6 +74,8 @@ app.use(router.allowedMethods());
 app.addEventListener('listen', () => {
   console.log(`Listening at http://localhost:${PORT}`);
 });
+
+await serve(handlePage)
 
 if (import.meta.main) {
   await app.listen({ port: PORT });
