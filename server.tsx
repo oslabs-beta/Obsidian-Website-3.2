@@ -4,7 +4,7 @@ import App from './client/app.tsx';
 import { staticFileMiddleware } from './staticFileMiddleware.ts';
 import { serve } from "https://deno.land/std@0.120.0/http/server.ts";
 
-const PORT = 3000;
+// const PORT = 3000;
 
 // Create a new server
 const app = new Application();
