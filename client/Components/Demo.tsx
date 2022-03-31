@@ -24,7 +24,7 @@ const Demo = (props: any) => {
         {/* <div id='demo-block'> */}
         <iframe
           // src='http://demo.obsidian.land/'
-          src='https://www.google.com/'
+          src='http://nytimes.com/'
 					height='100%'
           width='100%'
         ></iframe>

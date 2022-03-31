@@ -47,7 +47,7 @@ const QuickStart = (props: any) => {
         </a>
       </p>
 
-      <h2>Adding Obsidian Cacheing tool to a GraphQL server</h2>
+      <h2>Adding Obsidian Caching tool to a GraphQL server</h2>
       <p>
         Obsidian Acts as an extrention to the Oak Router, so implementing
         Obsidian is as easy as importing the Obsidian Router, and Oak Router and
