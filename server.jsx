@@ -68,7 +68,7 @@ export { app };
 
 function handlePage(ctx) {
   try {
-    const body = (ReactDomServer as any).renderToString(<App />);
+    const body = (ReactDomServer).renderToString(<App />);
     ctx.response.body = `<!DOCTYPE html />
   <html lang="en">
   <head>
