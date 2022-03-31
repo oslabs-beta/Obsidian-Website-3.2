@@ -3,10 +3,8 @@ import { React, ReactDomServer } from './deps.ts';
 import App from './client/app.tsx';
 import { staticFileMiddleware } from './staticFileMiddleware.ts';
 
-// Create a new server
 const app = new Application();
 
-// Track response time in headers of responses
 app.use(async (ctx, next) => {
   await next();
   const rt = ctx.response.headers.get('X-Response-Time');
@@ -45,41 +43,25 @@ const initialState = {
   },
 };
 
-// Router for base path
 const router = new Router();
 
 router.get('/', handlePage);
 
-// Bundle the client-side code
-// const [_, clientJS] = await Deno.bundle('./client/client.tsx');
-
 const {files, diagnostics } = await Deno.emit('./client/client.tsx', {bundle: 'module'});
 
-// Router for bundle
 const serverrouter = new Router();
+
 serverrouter.get('/static/client.js', (context) => {
   context.response.headers.set('Content-Type', 'text/html');
-  // context.response.body = clientJS;
   context.response.body = files['deno:///bundle.js'];
 });
 
-// Implement the routes on the server
 app.use(staticFileMiddleware);
 app.use(router.routes());
 app.use(serverrouter.routes());
 app.use(router.allowedMethods());
 
-// app.addEventListener('listen', () => {
-//   console.log(`Listening at http://localhost:${PORT}`);
-// });
-
 await app.listen({ hostname: "localhost", port: 8080 });
-
-// serve(handlePage);
-
-// if (import.meta.main) {
-//   await app.listen({ port: PORT });
-// }
 
 export { app };
 
