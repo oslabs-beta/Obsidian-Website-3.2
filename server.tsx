@@ -22,6 +22,7 @@ app.use(async (ctx, next) => {
   const ms = Date.now() - start;
   ctx.response.headers.set('X-Response-Time', `${ms}ms`);
 });
+
 const initialState = {
   obsidianSchema: {
     returnTypes: {
@@ -71,9 +72,9 @@ app.use(router.routes());
 app.use(serverrouter.routes());
 app.use(router.allowedMethods());
 
-app.addEventListener('listen', () => {
-  console.log(`Listening at http://localhost:${PORT}`);
-});
+// app.addEventListener('listen', () => {
+//   console.log(`Listening at http://localhost:${PORT}`);
+// });
 
 await app.listen({ hostname: "localhost", port: 8080 });
 
