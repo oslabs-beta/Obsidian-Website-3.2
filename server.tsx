@@ -2,7 +2,6 @@ import { Application, Router } from './serverDeps.ts';
 import { React, ReactDomServer } from './deps.ts';
 import App from './client/app.tsx';
 import { staticFileMiddleware } from './staticFileMiddleware.ts';
-// import { serve } from "https://deno.land/std@0.120.0/http/server.ts";
 
 // Create a new server
 const app = new Application();
