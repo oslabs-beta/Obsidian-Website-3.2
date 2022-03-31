@@ -1,4 +1,4 @@
-import { Application, Router } from './serverDeps.ts';
+import { Application, Router } from 'https://deno.land/x/oak@v8.0.0/mod.ts';
 import { React, ReactDomServer } from './deps.ts';
 import App from './client/app.tsx';
 import { staticFileMiddleware } from './staticFileMiddleware.ts';
