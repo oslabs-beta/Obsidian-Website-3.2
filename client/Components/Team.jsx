@@ -9,7 +9,7 @@ const users = [
     image:
       'https://res.cloudinary.com/dnlhcpafu/image/upload/v1648677370/Ali_dzbmj4.png',
     info: 'Ali is a full-stack software engineer who approaches problems with curiosity, and views new challenges as exciting learning opportunities. Outside of coding, she enjoys exploring new cities and staying active in nature.',
-    linkedin: 'https://www.linkedin.com/in//',
+    linkedin: 'https://www.linkedin.com/in/alison-fay/',
     github: 'https://github.com/ali-fay',
   },
 	{
@@ -18,7 +18,7 @@ const users = [
     image:
       'https://res.cloudinary.com/dnlhcpafu/image/upload/v1648666755/lindaZ_iaz71p.jpg',
     info: 'Linda is a full-stack software engineer that is interested in life-long learning and creative problem solving. Outside of coding, she enjoys board game nights and ping-pong with her friends.',
-    linkedin: 'https://www.linkedin.com/in//',
+    linkedin: 'https://www.linkedin.com/in/linda-zhao-/',
     github: 'https://github.com/lzhao15',
   },
 	{
@@ -27,7 +27,7 @@ const users = [
     image:
       'https://res.cloudinary.com/dnlhcpafu/image/upload/v1648666755/yasirC_xvia9y.png',
     info: 'Yasir is a software engineer that that loves to dive deeply into challenging, multifaceted technical problems across the stack. In his free time, he enjoys indoor climbing, backpacking in new countries and trying out various cuisines in his neighborhood.',
-    linkedin: 'https://www.linkedin.com/in//',
+    linkedin: 'https://www.linkedin.com/in/yasir-choudhury/',
     github: 'https://github.com/Yasir-Choudhury',
   },
 	{
@@ -36,7 +36,7 @@ const users = [
     image:
       'https://res.cloudinary.com/dnlhcpafu/image/upload/v1648669384/yuriiS_txl37b.jpg',
     info: 'Yurii is a full-stack software developer, who constantly seeks out innovative solutions to everyday problems, honed analytical thinking and collaboration skills, and loves working with a team. Besides coding, loves hanging out with friends or exploring new places..',
-    linkedin: 'https://www.linkedin.com/in//',
+    linkedin: 'https://www.linkedin.com/in/yuriishchyrba/',
     github: 'https://github.com/YuriiShchyrba',
   },
 	{
