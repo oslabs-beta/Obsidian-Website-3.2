@@ -61,7 +61,7 @@ app.use(router.routes());
 app.use(serverrouter.routes());
 app.use(router.allowedMethods());
 
-await app.listen({ hostname: "localhost", port: 8080 });
+await app.listen({ hostname: "localhost", port: 3000 });
 
 export { app };
 
